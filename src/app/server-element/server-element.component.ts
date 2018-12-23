@@ -7,7 +7,8 @@ import { Component, Input } from '@angular/core';
 })
 export class ServerElementComponent {
 
-  @Input()
+  // tslint:disable-next-line:no-input-rename // Just testing how alias works
+  @Input('srvElement')
   element: { type: string, name: string, content: string };
 
 }

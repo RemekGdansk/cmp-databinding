@@ -11,7 +11,8 @@ export class CockpitComponent {
   serverCreated: EventEmitter<{ serverName: string, serverContent: string }> =
     new EventEmitter<{ serverName: string, serverContent: string }>();
 
-  @Output()
+  // tslint:disable no-output-rename // Just for testing aliases
+  @Output('bpCreated')
   blueprintCreated: EventEmitter<{ serverName: string, serverContent: string }> =
     new EventEmitter<{ serverName: string, serverContent: string }>();
 
